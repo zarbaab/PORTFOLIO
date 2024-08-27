@@ -39,7 +39,7 @@ function Home() {
             <br />
             <p className="text-sm md:text-md text-justify">
             As a skilled packaging designer with frontend
-development expertise I'm passionate about building innovative solutions and creating visually appealing experiences. With skills in HTML, CSS, JAVASCRIPT,C, C++, Java, Python, and graphic design tools like Canva, Photoshop, Figma, and Adobe XD, I'm always looking to leverage technology and design to make a meaningful impact.
+development expertise I'm passionate about building innovative solutions and creating visually appealing experiences.With skills in HTML, CSS, JAVASCRIPT, React.JS, Tailwind CSS, Bootstrap, Node.js, C, C++, Java, Python, and graphic design tools like Canva, Photoshop, Figma, and Adobe XD, I'm always looking to leverage technology and design to make a meaningful impact.
 
 I'm excited to connect with like-minded professionals, learn from their experiences, and share my own knowledge and insights. Let's collaborate and create something amazing!
             </p>
