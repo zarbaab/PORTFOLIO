@@ -30,7 +30,7 @@ function Home() {
               {/* <span >Developer</span> */}
               <ReactTyped
                 className="text-red-700 font-bold"
-                strings={["Developer", "Programmer", "Coder"]}
+                strings={["Frontend Developer","Graphic designer","UI/UX designer", "Programmer", "Coder"]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
@@ -50,17 +50,18 @@ I'm excited to connect with like-minded professionals, learn from their experien
                 <h1 className="font-bold text-center ">Available on</h1>
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100074346025045&mibextid=ZbWKwL" target="_blank">
                       <FaSquareFacebook className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/in/zarbaab-mehboob-23bb42233/" target="_blank">
                       <FaLinkedin className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.gmail.com/" target="_blank">
+                  <a href="mailto:hijabivocalist@gmail.com" target="_blank">
+
                       <CiMail className="text-2xl cursor-pointer" />
                     </a>
                   </li>
@@ -76,6 +77,11 @@ I'm excited to connect with like-minded professionals, learn from their experien
                   <FaNodeJs className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
                 </div>
               </div>
+            </div>
+            <div className="mt-4">
+              <a href="/ZARBAAB MEHBOOB RESUME.pdf" download className="bg-red-700 text-white px-4 py-1.5 rounded">
+                DOWNLOAD MY CV
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1">

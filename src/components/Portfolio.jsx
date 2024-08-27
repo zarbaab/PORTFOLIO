@@ -1,85 +1,43 @@
-import React from "react";
-import HTML from "../../public/html.png";
-import CSS from "../../public/css.jpg";
-import JS from "../../public/javascript.png";
-import java from "../../public/java.png";
-import python from "../../public/python.webp";
-import mongoDB from "../../public/mongodb.jpg";
-import Figma from "../../public/figma.png";
-import AdobeXd from "../../public/xd.png";
-import Vite from "../../public/vite.svg";
-import reactjs from "../../public/reactjs.png";
-import nodejs from "../../public/node.png";
-import Canva from "../../public/canva.png";
-import Photoshop from "../../public/ps.png";
-import Oracle from "../../public/oracle.png";
+import React, { useState } from "react";
 
 function PortFolio() {
+  const [playingVideo, setPlayingVideo] = useState(null);
+
   const cardItem = [
     {
-        id: 1,
-        logo: HTML,
-        name: "html",
-      },
-      {
-        id: 2,
-        logo: CSS,
-        name: "css",
-      },
-      {
-        id: 3,
-        logo: JS,
-        name: "js",
-      },
-      {
-        id: 4,
-        logo: reactjs,
-        name: "ReactJS",
-      },
-    {
-      id: 5,
-      logo: mongoDB,
-      name: "MongoDB",
-    },
-   
-    {
-      id: 6,
-      logo: nodejs,
-      name: "NodeJS",
+      id: 1,
+      video: "/Amazon Clone.mp4",
+      thumbnail: "/AC.jpeg",
+      name: "HTML+CSS",
+      description: "This is my very first attempt to make an Amazon clone.",
     },
     {
-      id: 7,
-      logo: python,
-      name: "Python",
+      id: 2,
+      video: "/Rock-Paper-Scissor.mp4",
+      thumbnail: "/RPS.jpeg",
+      name: "HTML+CSS+JS",
+      description: "I made this game using HTML, CSS, and JavaScript.",
     },
     {
-      id: 8,
-      logo: java,
-      name: "Java",
+      id: 3,
+      video: "/Python Project.mp4",
+      thumbnail: "/TED.jpeg",
+      name: "Python based AI project",
+      description: "Python-based AI project which detects emotion by text.",
     },
     {
-        id:9 ,
-        logo:Figma ,
-        name: "figma",
-      },
-      {
-        id:10 ,
-        logo: AdobeXd,
-        name: "XD",
-      },
-      {
-        id: 11,
-        logo: Canva,
-        name: "canva",
-      },
-     
-      {
-        id:13 ,
-        logo:Photoshop ,
-        name: "photoshop",
-      },
-    
+      id: 4,
+      video: "/Figma Project (Prototyping).mp4",
+      thumbnail: "/LMS.jpeg",
+      name: "FIGMA based project",
+      description: "Figma project in which LMS is designed for STUDENT & TEACHER portal with login.",
+    },
   ];
+
+  const handlePlayVideo = (id) => {
+    setPlayingVideo(id);
+  };
+
   return (
     <div
       name="Portfolio"
@@ -87,32 +45,41 @@ function PortFolio() {
     >
       <div>
         <h1 className="text-3xl font-bold mb-5">PortFolio</h1>
-        <span className=" underline font-semibold">Featured Projects</span>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
-          {cardItem.map(({ id, logo, name }) => (
+        <span className="underline font-semibold">Featured Projects</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 my-5">
+          {cardItem.map(({ id, video, thumbnail, name, description }) => (
             <div
-              className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
+              className="relative w-full h-0 pb-[56.25%] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300 overflow-hidden"
               key={id}
             >
-              <img
-                src={logo}
-                className="w-[120px] h-[120px] p-1 rounded-full border-[2px]"
-                alt=""
-              />
-              <div>
-                <div className="px-2 font-bold text-xl mb-2">{name}</div>
-                <p className="px-2 text-gray-700">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div className=" px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
-                </button>
-              </div>
+              {playingVideo === id ? (
+                <video
+                  src={video}
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  controls
+                  autoPlay
+                />
+              ) : (
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                  <img
+                    src={thumbnail}
+                    alt={`${name} thumbnail`}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                  />
+                  <button
+                    className="absolute bg-black bg-opacity-50 text-white font-bold py-2 px-4 rounded"
+                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                    onClick={() => handlePlayVideo(id)}
+                  >
+                    Play Video
+                  </button>
+                </div>
+              )}
+       <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-75 p-1">
+  <div className="font-bold text-base mb-1">{name}</div>
+  <p className="text-gray-700 text-xs">{description}</p>
+</div>
+
             </div>
           ))}
         </div>

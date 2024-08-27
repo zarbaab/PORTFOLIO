@@ -3,13 +3,18 @@ import html from "../../public/html.png";
 import css from "../../public/css.jpg";
 import java from "../../public/java.png";
 import javascript from "../../public/javascript.png";
-import oracle from "../../public/oracle.png";
+import Figma from "../../public/figma.png";
+import Reactjs from "../../public/reactjs.png";
+import Python from "../../public/python.webp";
+import AdobeXD from "../../public/xd.png";
+import Tailwind from "../../public/tailwind.png";
+import canva from "../../public/canva.png";
 function Experience() {
   const cardItem = [
     {
       id: 1,
       logo: html,
-      name: "MongoDB",
+      name: "HTML",
     },
     {
       id: 2,
@@ -28,8 +33,33 @@ function Experience() {
     },
     {
       id: 5,
-      logo: oracle,
-      name: "Oracle",
+      logo: Python,
+      name: "Python",
+    },
+    {
+      id: 6,
+      logo: Figma,
+      name: "Figma",
+    },
+    {
+      id: 7,
+      logo: AdobeXD,
+      name: "AdobeXD",
+    },
+    {
+      id: 8,
+      logo: canva,
+      name: "canva",
+    },
+    {
+      id: 9,
+      logo: Reactjs,
+      name: "Reactjs",
+    },
+    {
+      id: 10,
+      logo: Tailwind,
+      name: "Tailwind",
     },
    
   ];
