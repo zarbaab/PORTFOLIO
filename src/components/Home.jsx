@@ -30,7 +30,11 @@ function Home() {
               {/* <span >Developer</span> */}
               <ReactTyped
                 className="text-red-700 font-bold"
+<<<<<<< HEAD
                 strings={["Frontend Developer","Graphic designer","App developer","UI/UX designer", "Programmer", "Coder"]}
+=======
+                strings={["Frontend Developer","Graphic designer","UI/UX designer", "Programmer", "Coder"]}
+>>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
@@ -38,11 +42,18 @@ function Home() {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
+<<<<<<< HEAD
            I’m a frontend developer and packaging designer with a passion for building intuitive, visually compelling user experiences. With a strong foundation in HTML, CSS, JavaScript, React.js, Tailwind CSS, and Bootstrap, I bring designs to life with clean, responsive code. My skill set also includes backend exposure using Node.js and Python, along with programming experience in C, C++, and Java.
 
 Beyond code, I’m well-versed in UI/UX design tools like Figma, Adobe XD, Photoshop, and Canva — allowing me to bridge the gap between functionality and aesthetics. From collaborating with London-based teams at Webtech.dev to developing AI-powered food assistance systems in academia, I thrive in dynamic environments where design meets innovation.
 
 I'm always eager to learn, share, and connect with like-minded professionals. Let’s collaborate and create experiences that leave a lasting impact.
+=======
+            As a skilled packaging designer with frontend
+development expertise I'm passionate about building innovative solutions and creating visually appealing experiences.With skills in HTML, CSS, JAVASCRIPT, React.JS, Tailwind CSS, Bootstrap, Node.js, C, C++, Java, Python, and graphic design tools like Canva, Photoshop, Figma, and Adobe XD, I'm always looking to leverage technology and design to make a meaningful impact.
+
+I'm excited to connect with like-minded professionals, learn from their experiences, and share my own knowledge and insights. Let's collaborate and create something amazing!
+>>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
             </p>
             <br />
             {/* social media icons */}
@@ -80,7 +91,11 @@ I'm always eager to learn, share, and connect with like-minded professionals. Le
               </div>
             </div>
             <div className="mt-4">
+<<<<<<< HEAD
               <a href="/Zarbaab's_Resume.pdf" download className="bg-red-700 text-white px-4 py-1.5 rounded">
+=======
+              <a href="/ZARBAAB MEHBOOB CV.pdf" download className="bg-red-700 text-white px-4 py-1.5 rounded">
+>>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
                 DOWNLOAD MY CV
               </a>
             </div>
