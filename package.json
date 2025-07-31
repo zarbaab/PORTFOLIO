@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "protfolio",
-=======
+
   "name": "zar-portfolio",
->>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,29 +11,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.7.4",
     "emailjs-com": "^3.2.0",
-    "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.52.2",
-=======
     "axios": "^1.7.5",
     "icons": "^1.0.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
->>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.3.0",
     "react-scroll": "^1.9.0",
     "react-typed": "^2.0.12"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
     "@eslint/js": "^9.9.0",
->>>>>>> 32cd73a9204deb87b207fe92b65cf0cac774225c
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
